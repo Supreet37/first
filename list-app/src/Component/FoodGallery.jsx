@@ -1,14 +1,14 @@
 import React from "react";
 import prawns from "../assets/Frame 1102.png";
-import omlet from "../assets/Frame 1103.png";
-import noodles from "../assets/Frame 1104.png";
+import omlet from "../assets/Frame 1104.png";
+import noodles from "../assets/Frame 1103.png";
 import corn from "../assets/Frame 1117.png";
 import cauliflower from "../assets/Frame 1116.png";
 import vegetables from "../assets/Frame 1114.png";
 
 const FoodGallery = () => {
   return (
-    <section id="food-section">
+    <div id="food-section">
       <h2>Food & Grocery</h2>
 
       <div className="food-grid">
@@ -60,7 +60,7 @@ const FoodGallery = () => {
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diarn nonumy</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

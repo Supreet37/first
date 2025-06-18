@@ -123,7 +123,7 @@ margin: auto;
 
 #food-section {
   margin: 30px 0;
-  padding: 20px 70px;
+  padding: 20px 50px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -148,6 +148,15 @@ margin: auto;
 
 .food-card.wide {
   grid-column: span 2;
+}
+
+.food-card h3 {
+  font-size: 22px;
+}
+
+.food-card p {
+  color: #505050;
+  font-size: 18px;
 }
 
 .image-wrapper img {
