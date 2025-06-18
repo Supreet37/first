@@ -1,74 +1,63 @@
 import React from "react";
-import profile1 from "../assets/profile1.png";
-import profile2 from "../assets/profile2.png";
 import FeedbackCard from "./FeedbackCard";
+import profileImage from "../assets/5aab5459786b226d5d70e39a1dfa0e817fee1e4d.jpg";
+
+const feedbacks = [
+  {
+    id: 1,
+    name: "Shruti Sharma",
+    role: "Customer",
+    feedback:
+      "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
+    image: profileImage,
+  },
+  {
+    id: 2,
+    name: "Shruti Sharma",
+    role: "Customer",
+    feedback:
+      "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
+    image: profileImage,
+  },
+  {
+    id: 3,
+    name: "Shruti Sharma",
+    role: "Customer",
+    feedback:
+      "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
+    image: profileImage,
+  },
+  {
+    id: 4,
+    name: "Shruti Sharma",
+    role: "Customer",
+    feedback:
+      "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
+    image: profileImage,
+  },
+];
 
 const AboutUs = () => {
-  const feedbacks = [
-    {
-      id: 1,
-      name: "Rahul Kumar",
-      feedback:
-        "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
-      role: "Customer",
-      image: profile1,
-    },
-    {
-      id: 1,
-      name: "Shruti Sharma",
-      feedback:
-        "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
-      role: "Customer",
-      image: profile2,
-    },
-    {
-      id: 1,
-      name: "Rahul Kumar",
-      feedback:
-        "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
-      role: "Customer",
-      image: profile1,
-    },
-    {
-      id: 1,
-      name: "Shruti Sharma",
-      feedback:
-        "Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibu lum nibh.Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum nibh.",
-      role: "Customer",
-      image: profile2,
-    },
-  ];
-
   return (
-    <div className="about">
-      <div id="heading">
-        <h2>What Customers Say About us</h2>
+    <div id="customer">
+      <div className="customer-head">
+        <h1>What Customers Say About us</h1>
         <p>
-          Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Phasellus
-          viverra orci sed risus tinci dunt tempor. Nulla malesuada vestibulum
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          viverra orci sed risus tincidunt tempor. Nulla malesuada vestibulum
           nibh.
         </p>
       </div>
 
-      <div className="feedbacks">
+      <div className="customer-section">
         {feedbacks.map((item) => (
           <FeedbackCard
+            key={item.id}
             name={item.name}
-            feedback={item.feedback}
             role={item.role}
+            feedback={item.feedback}
             image={item.image}
           />
-
-          //   <div className="box">
-          //     <div className="profile">
-          //       <img src={item.image} alt="profile picture" />
-          //       <div className="info">
-          //         <h3>{item.name}</h3>
-          //         <p>{item.role}</p>
-          //       </div>
-          //     </div>
-          //     <p className="review">{item.feedback}</p>
-          //   </div>
         ))}
       </div>
     </div>
