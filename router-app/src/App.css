@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  box-shadow: 0px 2px 10px black;
+  background-color: #ccc;
+}
+
+#Navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+#Navbar ul li a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+#Navbar button {
+  margin-left: 80px;
+  padding: 15px 40px;
+  background-color: green;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
