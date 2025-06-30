@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "7e98",
+      "name": "hi",
+      "email": "hi@gmail.com",
+      "phone": "999999999999999"
+    },
+    {
+      "id": "2c6c",
+      "name": "sad",
+      "email": "sad@gmail.com",
+      "phone": "888888888888888"
+    }
+  ]
+}
